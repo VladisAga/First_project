@@ -1,18 +1,13 @@
-.name_of_product_dis {
-    max-width: 673px;
-}
-
 .discription_of_product_all div img {
-    height: 340px;
-    width: 250px;
+    width: 350px;
 }
 
 .div_with_img {
-    padding-left: 110px;
+    padding-left: 50px;
 }
 
 .dot_divider {
-    width: 471px;
+    width: 478px;
 }
 
 .dot_divider2 {
@@ -20,11 +15,11 @@
 }
 
 .dot_divider3 {
-    width: 410px;
+    width: 493px;
 }
 
 .dot_divider4 {
-    width: 473px;
+    width: 495px;
 }
 
 .dot_divider5 {
@@ -32,5 +27,5 @@
 }
 
 .dot_divider6 {
-    width: 394px;
+    width: 398px;
 }

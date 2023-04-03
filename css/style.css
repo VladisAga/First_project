@@ -63,7 +63,7 @@ body {
 }
 
 header {
-    max-width: 1400px;
+    max-width: 1920px;
     background-color: #1A1A25;
     margin: 0 auto;
 }
@@ -113,7 +113,7 @@ header {
 
 main {
     background-color: #ECECEC;
-    max-width: 1400px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -565,7 +565,7 @@ left: 57%;
 }
 
 .sixth_box {
-    max-width: 1400px;
+    max-width: 1920px;
     margin: 100px auto 0;
     background-color: #1A1A25;
 }
@@ -779,7 +779,7 @@ left: 57%;
 }
 
 footer {
-    max-width: 1400px;
+    max-width: 1920px;
     margin: 0 auto;
     background-color: #1A1A25;
 }
