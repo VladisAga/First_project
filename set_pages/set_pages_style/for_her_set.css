@@ -13,3 +13,9 @@
 .link_line {
     max-width: 1000px;
 }
+
+@media all and (max-width:530px) {
+    .div_with_img {
+        padding-left: 20px;
+    }
+} 

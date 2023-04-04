@@ -1,0 +1,162 @@
+.topic:hover {
+    transform: scale(1.2);
+    color: #bc474b;
+}
+
+.feedback_row::placeholder {
+    color: black;
+}
+
+.feedback_row:hover::placeholder {
+    color: #bc474b;
+    font-size: 15px;
+}
+
+.feedback_row:focus {
+    color: #bc474b;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.start_footer nav div:hover {
+    transform: scale(1.2);
+}
+
+.tel_icon::before {
+    content: "";
+    background-image: url("/images/Messengers/Telegram.png");
+    display: inline-block;
+    background-size: 30px;
+    position: relative;
+    top: 7px;
+    width: 40px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.vib::before {
+    content: '';
+    background-image: url("/images/Messengers/Viber.png");
+}
+
+.what::before {
+    content: '';
+    background-image: url("/images/Messengers/WhatsApp.png");
+}
+
+
+
+
+
+.first_grid .link_for_box::after,
+.second_grid .link_for_box::after,
+.third_grid a::after,
+.f_grid a::after,
+.fi_grid a::after,
+.s_grid a::after  {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    background-position: center;
+    width: 280px;
+    height: 499px;
+    transition-duration: 0.6s;
+}
+
+.third_grid a::after,
+.f_grid a::after,
+.fi_grid a::after,
+.s_grid a::after {
+    height: 235px;
+}
+
+.sets_area a::after,
+.num_2 a::after,
+.num_3 a::after,
+.num_4 a::after {
+    content: '';
+    display: block;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    width: 280px;
+    height: 360px;
+    transition-duration: 0.6s;
+}
+
+.stock_back1 a::after, .stock_back2 a::after, .stock_back3 a::after {
+    width: 366px;
+    height: 440px;
+}
+
+.first_grid .link_for_box:hover::after,
+.second_grid .link_for_box:hover::after,
+.third_grid a:hover::after,
+.f_grid a:hover::after,
+.fi_grid a:hover::after,
+.s_grid a:hover::after,
+.sets_area a:hover::after,
+.num_2 a:hover::after,
+.num_3 a:hover::after,
+.num_4 a:hover::after,
+.stock_back1 a:hover::after,
+.stock_back2 a:hover::after,
+.stock_back3 a:hover::after {
+    background-color: #E6DDDE;
+    background-size: 280px;
+    background-repeat: no-repeat;
+}
+
+.first_grid .link_for_box:hover::after,
+.third_grid a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/аминокислоты.png');
+}
+
+.second_grid .link_for_box:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/креатин.png');
+}
+
+.f_grid a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/батончик_2.png');
+}
+
+.fi_grid a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/баночка.png');
+}
+
+.s_grid a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/пакетик.png');
+}
+
+.sets_area a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/для_похудения.png');
+}
+
+.num_2 a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/для_сухого_роста.png');
+}
+
+.num_3 a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/для_массы.png');
+}
+
+.num_4 a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/молодость_и_здоровье.png');
+}
+
+.stock_back1 a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/шейкер.png');
+}
+
+.stock_back2 a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/капа.png');
+}
+
+.stock_back3 a:hover::after {
+    background-image: url('/images/Популярные_товары/второй_блок/краги.png');
+}
