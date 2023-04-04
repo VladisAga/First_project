@@ -20,7 +20,7 @@
 }
 
 .dot_divider4 {
-    width: 506px;
+    width: 497px;
 }
 
 .dot_divider5 {
@@ -29,4 +29,8 @@
 
 .dot_divider6 {
     width: 398px;
+}
+
+.size_150gr {
+    font-size: 21.4px;
 }
