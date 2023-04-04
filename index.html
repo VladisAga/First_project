@@ -30,23 +30,80 @@
 
     <main>
         <div class="all_content">
-            <div class="first_box" id="first_box">
-                <div class="disc_for_new">
-                    <div class="arrow first_arrow"></div>
-                    <div class="main_in_disc">
-                        <p class="disc_text"><span class="first_red">скидки для новых покупателей</span>
-                            <br><br> Звоните прямо сейчас, назовите кодовое слово '<span
-                                class="second_red">Протеин</span>'
-                            и получите эксклюзивную скидку на
-                            весь ассортимент!
-                            <br><br>
-                            <a href="tel:+375440000000" class="third_red">+375 (44) 000-00-00</a>
-                        </p>
-                        <div><img class="protein_man" src="./images/protein_man.png" alt="protein_man"></div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="first_box" id="first_box">
+                        <div class="disc_for_new">
+                            <div><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+                            <div class="main_in_disc">
+                                <p class="disc_text"><span class="first_red">скидки для новых покупателей</span>
+                                    <br><br> Звоните прямо сейчас, назовите кодовое слово '<span
+                                        class="second_red">Протеин</span>'
+                                    и получите эксклюзивную скидку на
+                                    весь ассортимент!
+                                    <br><br>
+                                    <a href="tel:+375440000000" class="third_red">+375 (44) 000-00-00</a>
+                                </p>
+                                <div><img class="protein_man" src="./images/protein_man.png" alt="protein_man"></div>
+                            </div>
+                            <div><a class="next" onclick="plusSlides(1)">❯</a></div>
+                        </div>
                     </div>
-                    <div class="arrow"></div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="first_box" id="first_box">
+                        <div class="disc_for_new">
+                            <div><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+                            <div class="main_in_disc">
+                                <p class="disc_text"><span class="first_red">скидки для постоянных клиентов</span>
+                                    <br><br> При заказе онлайн скидка на второй товар - <span
+                                    class="second_red">25%</span><br>
+                                    при заказе трех товаров - <span
+                                    class="second_red">шейкер в подарок</span>
+                                    <br><br>
+                                    <a href="tel:+375440000000" class="third_red">+375 (44) 000-00-00</a>
+                                </p>
+                                <div><img class="protein_man_on_the_second_slide" src="./images/Tricky_Jackson-transformed.png" alt="protein_man"></div>
+                            </div>
+                            <div><a class="next" onclick="plusSlides(1)">❯</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
             </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
 
             <div class="second_box after_tranform" id="second_box">
                 <p class="topic_of_box">Популярные товары</p>

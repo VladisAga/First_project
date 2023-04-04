@@ -29,6 +29,91 @@ main {
     margin: 0 auto;
 }
 
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: auto;
+    transform: translate(0,-25%);
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-25%);
+    border-radius: 3px 0 0 3px;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
 .all_content {
     max-width: 1200px;
     margin: 0 auto;
@@ -38,7 +123,7 @@ main {
 .first_box {
     border-radius: 10px;
     background: linear-gradient(to right, rgba(226, 201, 202, 1), rgba(134, 134, 134, 0.5), rgba(207, 161, 162, 0.7));
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .disc_for_new {
@@ -46,23 +131,8 @@ main {
     margin: 0 auto;
     display: flex;
     column-gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.arrow {
-    width: 50px;
-    height: 50px;
-    border-radius: 90px;
-    background-color: #ECECEC;
-    background-image: url('/images/right-arrow.png');
-    background-size: 28px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.first_arrow {
-    background-image: url('/images/left-arrow.png');
 }
 
 .main_in_disc {
@@ -99,7 +169,14 @@ main {
 }
 
 .protein_man {
-    max-width: 400px;
+    width: 400px;
+    height: 384px;
+}
+
+.protein_man_on_the_second_slide {
+    width: 350px;
+    height: 384px;
+    padding-left: 50px;
 }
 
 .topic_of_box {
@@ -537,7 +614,8 @@ left: 57%;
     }
 
     .protein_man {
-        max-width: 300px;
+        width: 300px;
+        height: 300px;;
     }
 
     .arrow {
