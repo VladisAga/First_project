@@ -65,7 +65,7 @@
                                     <br><br>
                                     <a href="tel:+375440000000" class="third_red">+375 (44) 000-00-00</a>
                                 </p>
-                                <div><img class="protein_man_on_the_second_slide" src="./images/Tricky_Jackson-transformed.png" alt="protein_man"></div>
+                                <div><img class="protein_man_on_the_second_slide" src="./images/protein_man_on_the_second_slide.png" alt="protein_man_2.0"></div>
                             </div>
                             <div><a class="next" onclick="plusSlides(1)">❯</a></div>
                         </div>
@@ -76,41 +76,14 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
             </div>
-            <script>
-                let slideIndex = 1;
-                showSlides(slideIndex);
-    
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-    
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-    
-                function showSlides(n) {
-                    let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    let dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) { slideIndex = 1 }
-                    if (n < 1) { slideIndex = slides.length }
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
-                }
-            </script>
+            
 
             <div class="second_box after_tranform" id="second_box">
                 <p class="topic_of_box">Популярные товары</p>
                 <div class="pop_product">
                     <div class="first_grid prop">
-                        <a class="link_for_box" href="./popular_pages/aminokislotьI.html">
-                            <img class="first_img" src="./images/Популярные_товары/аминокислоты.png" alt="аминокислоты">
+                        <a class="link_for_box" href="./pages/amino_acids.html">
+                            <img class="first_img" src="./images/popular_product/amino_acids.png" alt="аминокислоты">
                             <span class="text_in_grid size_after_transform">Комплексные аминокислоты scitec nutrition
                                 AMINO
                                 5600</span>
@@ -118,37 +91,37 @@
                     </div>
 
                     <div class="second_grid prop">
-                        <a class="link_for_box" href="./popular_pages/creatine.html">
-                            <img class="first_img" src="./images/Популярные_товары/cm3.png" alt="креатин">
+                        <a class="link_for_box" href="./pages/creatine_trec_nutrition.html">
+                            <img class="first_img" src="./images/popular_product/cm3_gainer.png" alt="креатин">
                             <span class="text_in_grid  size_after_transform">Креатин TREC nutrition CM3 1250 (90
                                 капс)</span>
                         </a>
                     </div>
                     <div class="third_grid prop">
-                        <a class="link_for_box small_box_link" href="./popular_pages/aminokislotьI_small.html">
-                            <img class="third_img" src="./images/Популярные_товары/прямоугольная коробка.png"
-                                alt="коробка">
+                        <a class="link_for_box small_box_link" href="./pages/amino_acids_small_portion.html">
+                            <img class="third_img" src="./images/popular_product/amino_acids_small_portion.png"
+                                alt="малая_порция_аминокислот">
                             <span class="text_in_grid size_after_transform">Аминокислоты scitec nutrition MEGA BCAA
                                 1400</span>
                         </a>
                     </div>
                     <div class="f_grid prop">
-                        <a class="link_for_box small_box_link" href="./popular_pages/biscuit.html">
-                            <img class="four_img" src="./images/Популярные_товары/батончик.png" alt="батончик">
+                        <a class="link_for_box small_box_link" href="./pages/biscuit_trec_nutrition.html">
+                            <img class="four_img" src="./images/popular_product/biscuit_trec_nutrition.png" alt="батончик">
                             <span class="text_in_grid  text_prop size_after_transform ">Chicalab CHIKA BISCUIT (50
                                 гр)</span>
                         </a>
                     </div>
                     <div class="fi_grid last">
-                        <a class="link_for_box small_box_link" href="./popular_pages/aminokislotьI_jar.html">
-                            <img class="fi_img" src="./images/Популярные_товары/маленькая баночка.png" alt="баночка">
+                        <a class="link_for_box small_box_link" href="./pages/amino_acids_jar.html">
+                            <img class="fi_img" src="./images/popular_product/amino_acids_jar.png" alt="баночка_аминокислот">
                             <span class="text_in_grid  size_after_transform">Аминокислоты trec NUTRITION BCAA HIGH
                                 SPEED</span>
                         </a>
                     </div>
                     <div class="s_grid last">
-                        <a class="link_for_box small_box_link" href="./popular_pages/protein.html">
-                            <img class="s_img" src="./images/Популярные_товары/пакетик.png" alt="пакетик">
+                        <a class="link_for_box small_box_link" href="./pages/protein_trec_nutrition.html">
+                            <img class="s_img" src="./images/popular_product/protein_trec_nutrition.png" alt="протеин_маленькая_порция">
                             <span class="text_in_grid  size_after_transform">Протеин сывороточный Trec Nutrition Whey
                                 100 (150 гр)</span>
                         </a>
@@ -160,27 +133,27 @@
                 <p class="topic_of_box">Наборы спортивного питания</p>
                 <div class="sets">
                     <div class="sets_area">
-                        <a class="link_for_box sets_area_link" href="/set_pages/for_her_set.html">
-                            <img class="sets_prop" src="./images/sets_nutrition/first_set.png" alt="first_set">
+                        <a class="link_for_box sets_area_link" href="./pages/for_her_set.html">
+                            <img class="sets_prop" src="./images/sets_nutrition/for_her_set.png" alt="for_her_set">
                             <span class="text_in_grid">Набор для похудения для женщин "Для неё"</span>
                         </a>
                     </div>
                     <div class="sets_area num_2">
-                        <a class="link_for_box sets_area_link" href="./set_pages/perfect_relief.html">
-                            <img class="sets_prop" src="./images/sets_nutrition/second_set.png" alt="second_set">
+                        <a class="link_for_box sets_area_link" href="./pages/perfect_relief_set.html">
+                            <img class="sets_prop" src="./images/sets_nutrition/perfect_relief_set.png" alt="perfect_relief_set">
                             <span class="text_in_grid">Набор для роста сухой мышечной массы "Идеальный
                                 рельеф"</span>
                         </a>
                     </div>
                     <div class="sets_area num_3">
-                        <a class="link_for_box sets_area_link" href="./set_pages/mega_mass_set.html">
-                            <img class="sets_prop" src="./images/sets_nutrition/third_set.png" alt="third_set">
+                        <a class="link_for_box sets_area_link" href="./pages/mega_mass_set.html">
+                            <img class="sets_prop" src="./images/sets_nutrition/mega_mass_set.png" alt="mega_mass_set">
                             <span class="text_in_grid">Набор для максимального массонабора "MEGA Mass"</span>
                         </a>
                     </div>
                     <div class="sets_area num_4">
-                        <a class="link_for_box sets_area_link" href="./set_pages/youth_and_health_set.html">
-                            <img class="sets_prop" src="./images/sets_nutrition/fourth_set.png" alt="fourth_set">
+                        <a class="link_for_box sets_area_link" href="./pages/youth_and_health_set.html">
+                            <img class="sets_prop" src="./images/sets_nutrition/youth_and_health_set.png" alt="youth_and_health_set">
                             <span class="text_in_grid">Набор для молодости и здоровья кожи "Молодость и
                                 Здоровье"</span>
                         </a>
@@ -192,8 +165,8 @@
                 <p class="topic_of_box">Акции</p>
                 <div class="stocks_block">
                     <div class="sets_area in_stock stock_back1">
-                        <a class="stock_area_link" href="./stock_pages/strawberry.html">
-                            <img class="stock_prop" src="./images/stocks/first_stock.png" alt="first_stock">
+                        <a class="stock_area_link" href="./pages/strawberry_gainer.html">
+                            <img class="stock_prop" src="./images/stocks/stock_with_shaker.png" alt="stock_with_shake">
                             <span class="text_in_stock">
                                 <span class="text_in_grid stock">Гейнер MASS UP 5000 г ActivLab - клубника</span>
                                 <span class="plus plus_in_stock">+</span>
@@ -202,8 +175,8 @@
                         </a>
                     </div>
                     <div class="sets_area in_stock stock_back2">
-                        <a class="stock_area_link" href="./stock_pages/apricot.html">
-                            <img class="stock_prop" src="./images/stocks/second_stock.png" alt="second_stock">
+                        <a class="stock_area_link" href="./pages/apricot_carnitine.html">
+                            <img class="stock_prop" src="./images/stocks/stock_with_capa.png" alt="stock_with_capa">
                             <span class="text_in_stock">
                                 <span class="text_in_grid stock">Л-карнитин жидкий 5000 мл Trec Nutrition
                                     - Абрикос</span>
@@ -213,8 +186,8 @@
                         </a>
                     </div>
                     <div class="sets_area in_stock stock_back3">
-                        <a class="stock_area_link" href="./stock_pages/peach.html">
-                            <img class="stock_prop" src="./images/stocks/third_stock.png" alt="third_stock">
+                        <a class="stock_area_link" href="./pages/peach_carbohydrates.html">
+                            <img class="stock_prop" src="./images/stocks/stock_with_gloves.png" alt="stock_with_gloves">
                             <span class="text_in_stock">
                                 <span class="text_in_grid stock">Комплекс углеводов CarboX 1000 г - Персик</span>
                                 <span class="plus plus_in_stock">+</span>
@@ -257,7 +230,7 @@
                 <div class="comment_area">
                     <div class="main_com">
                         <div class="first_part_com">
-                            <div><img class="img_com" src="./images/photo_comment/Билли.png" alt="Билли"></div>
+                            <div><img class="img_com" src="./images/photo_comment/billy.png" alt="billy"></div>
                             <p class="plus name_com">Билли Херрингтон</p>
                         </div>
                         <p class="main_text_com">
@@ -273,7 +246,7 @@
                 <div class="comment_area">
                     <div class="main_com">
                         <div class="first_part_com">
-                            <div><img class="img_com" src="./images/photo_comment/Ван.png" alt="Ван"></div>
+                            <div><img class="img_com" src="./images/photo_comment/van.png" alt="van"></div>
                             <p class="plus name_com">Ван дакхолм</p>
                         </div>
                         <p class="main_text_com">
@@ -288,7 +261,7 @@
                 <div class="comment_area">
                     <div class="main_com">
                         <div class="first_part_com">
-                            <div><img class="img_com" src="./images/photo_comment/Стив.png" alt="Стив"></div>
+                            <div><img class="img_com" src="./images/photo_comment/steve.png" alt="steve"></div>
                             <p class="plus name_com">Стив рэмбо</p>
                         </div>
                         <p class="main_text_com">
@@ -346,7 +319,7 @@
                         <input class="btn" type="submit" value="Отправить">
                     </form>
                     <div class="">
-                        <img class="feedback_telephone" src="./images/on_telephone.png" alt="on_telephone">
+                        <img class="feedback_telephone" src="./images/man_on_telephone.png" alt="on_telephone">
                     </div>
                 </div>
             </div>
@@ -387,6 +360,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 

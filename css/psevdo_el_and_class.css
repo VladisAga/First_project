@@ -26,7 +26,7 @@
 
 .tel_icon::before {
     content: "";
-    background-image: url("/images/Messengers/Telegram.png");
+    background-image: url("/images/messengers/telegram.png");
     display: inline-block;
     background-size: 30px;
     position: relative;
@@ -38,12 +38,12 @@
 
 .vib::before {
     content: '';
-    background-image: url("/images/Messengers/Viber.png");
+    background-image: url("/images/messengers/viber.png");
 }
 
 .what::before {
     content: '';
-    background-image: url("/images/Messengers/WhatsApp.png");
+    background-image: url("/images/messengers/whatsapp.png");
 }
 
 
@@ -114,49 +114,49 @@
 
 .first_grid .link_for_box:hover::after,
 .third_grid a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/аминокислоты.png');
+    background-image: url('/images/second_block_with_text/amino_acids_text.png');
 }
 
 .second_grid .link_for_box:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/креатин.png');
+    background-image: url('/images/second_block_with_text/creatine_trec_nutrition_text.png');
 }
 
 .f_grid a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/батончик_2.png');
+    background-image: url('/images/second_block_with_text/biscuit_trec_nutrition_text.png');
 }
 
 .fi_grid a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/баночка.png');
+    background-image: url('/images/second_block_with_text/amino_acids_jar_text.png');
 }
 
 .s_grid a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/пакетик.png');
+    background-image: url('/images/second_block_with_text/protein_trec_nutrition_text.png');
 }
 
 .sets_area a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/для_похудения.png');
+    background-image: url('/images/second_block_with_text/for_her_set_text.png');
 }
 
 .num_2 a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/для_сухого_роста.png');
+    background-image: url('/images/second_block_with_text/perfect_relief_set_text.png');
 }
 
 .num_3 a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/для_массы.png');
+    background-image: url('/images/second_block_with_text/mega_mass_set_text.png');
 }
 
 .num_4 a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/молодость_и_здоровье.png');
+    background-image: url('/images/second_block_with_text/youth_and_health_set_text.png');
 }
 
 .stock_back1 a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/шейкер.png');
+    background-image: url('/images/second_block_with_text/text_for_stock_with_shaker.png');
 }
 
 .stock_back2 a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/капа.png');
+    background-image: url('/images/second_block_with_text/text_for_stock_with_capa.png');
 }
 
 .stock_back3 a:hover::after {
-    background-image: url('/images/Популярные_товары/второй_блок/краги.png');
+    background-image: url('/images/second_block_with_text/text_for_stock_with_gloves.png');
 }
