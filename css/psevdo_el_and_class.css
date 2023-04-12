@@ -24,6 +24,10 @@
     transform: scale(1.2);
 }
 
+.end_footer div:hover a svg path {
+fill: #bc474b;
+}
+
 .tel_icon::before {
     content: "";
     background-image: url("/images/messengers/telegram.png");
@@ -45,10 +49,6 @@
     content: '';
     background-image: url("/images/messengers/whatsapp.png");
 }
-
-
-
-
 
 .first_grid .link_for_box::after,
 .second_grid .link_for_box::after,
