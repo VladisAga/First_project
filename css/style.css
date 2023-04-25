@@ -42,7 +42,7 @@ main {
     top: 50%;
     left: 0;
     width: auto;
-    transform: translate(0,-25%);
+    transform: translate(0, -25%);
     padding: 16px;
     margin-top: -22px;
     color: white;
@@ -58,7 +58,7 @@ main {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(0,-25%);
+    transform: translate(0, -25%);
     border-radius: 3px 0 0 3px;
     width: auto;
     padding: 16px;
@@ -194,14 +194,86 @@ main {
     padding-bottom: 100px;
 }
 
-.first_grid {
+.conteiner_for_grid {
+    position: relative;
     grid-column: 1;
     grid-row: 1/3;
 }
 
-.second_grid {
+.prop_under_grid {
+    position: absolute;
+    padding: 140px 0;
+    width: 280px;
+    background-color: #E6DDDE;
+    z-index: 2;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    top: 0;
+}
+
+.prop_under_grid ul {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.5;
+}
+
+.conteiner_for_grid2 {
+    position: relative;
     grid-column: 2;
     grid-row: 1/3;
+}
+
+.conteiner_for_grid3 {
+    position: relative;
+    grid-column: 3;
+    grid-row: 1/2;
+}
+
+.position_under_grid2 {
+    padding: 10px 0;
+}
+
+.conteiner_for_grid4 {
+    position: relative;
+    grid-column: 4;
+    grid-row: 1/2;
+}
+
+.conteiner_for_grid5 {
+    position: relative;
+    grid-column: 3;
+    grid-row: 2/3;
+}
+
+.conteiner_for_grid6 {
+    position: relative;
+    grid-column: 4;
+    grid-row: 2/3;
+}
+
+.f_grid,
+.first_grid,
+.third_grid,
+.second_grid,
+.fi_grid,
+.s_grid,
+.sets_area {
+    position: relative;
+    z-index: 3;
+    transition-duration: 0.5s;
+}
+
+.first_grid:hover,
+.second_grid:hover,
+.third_grid:hover,
+.f_grid:hover,
+.fi_grid:hover,
+.s_grid:hover,
+.sets_area:hover {
+    opacity: 0;
 }
 
 .third_grid {
@@ -301,6 +373,27 @@ main {
     justify-content: center;
 }
 
+.setss_conteiner {
+position: relative;
+}
+
+.position_for_sets {
+    display: flex;
+    flex-direction: column;
+}
+
+.position_for_sets ul, .position_for_sets p {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.36;
+    margin: 0;
+}
+
+.position_for_sets p {
+    margin-left: 10px;
+}
+
 .sets_area {
     border-radius: 10px;
     background-color: #E6DDDE;
@@ -353,9 +446,21 @@ main {
 }
 
 .plus_in_stock {
-position: absolute;
-top: 8%;
-left: 57%;
+    position: absolute;
+    top: 8%;
+    left: 57%;
+}
+
+.position_for_stock {
+    width: 366px;
+    height: 440px;
+    justify-content: center;
+}
+
+.position_for_stock ul span {
+    color: #BD2A2E;
+    font-size: 32px;
+    line-height: 1;;
 }
 
 .text_in_span_instock {
@@ -487,22 +592,22 @@ left: 57%;
         grid-template: repeat(4, 235px)/repeat(2, 280px);
     }
 
-    .third_grid {
+    .conteiner_for_grid3 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    .f_grid {
+    .conteiner_for_grid4 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
-    .fi_grid {
+    .conteiner_for_grid5 {
         grid-column: 1;
         grid-row: 4/5;
     }
 
-    .s_grid {
+    .conteiner_for_grid6 {
         grid-column: 2;
         grid-row: 4/5;
     }
@@ -510,7 +615,7 @@ left: 57%;
 
 @media all and (max-width: 1200px) {
     .arrow {
-    margin: 0 10px;
+        margin: 0 10px;
     }
 }
 
@@ -521,80 +626,87 @@ left: 57%;
         row-gap: 12px;
     }
 
+    .prop_under_grid:not(.position_for_stock, .position_for_sets) ul {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 2.5;
+    }
+
+    .position_for_sets ul {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 2.36;
+    }
+
     .link_for_box {
-    width: 224px;
-    height: 392px;
-}
+        width: 224px;
+        height: 392px;
+    }
 
-.small_box_link {
-    height: 190px;
-}
+    .small_box_link {
+        height: 190px;
+    }
 
-.first_img {
-    height: 294px;
-    width: 164px;
-    display: inline-block;
-    margin: 30px 30px 10px;
-}
+    .first_img {
+        height: 294px;
+        width: 164px;
+        display: inline-block;
+        margin: 10px 30px 10px;
+    }
 
-.size_after_transform {
-    font-size: 12px;
-}
+    .size_after_transform {
+        font-size: 12px;
+    }
 
-.text_prop {
-    margin: 13px 16px;
-}
+    .text_prop {
+        margin: 13px 16px;
+    }
 
-.third_img {
-    width: 184px;
-    display: inline-block;
-    margin: 20px;
-}
+    .third_img {
+        width: 184px;
+        display: inline-block;
+        margin: 20px;
+    }
 
-.four_img {
-    width: 183px;
-    height: 134px;
-}
+    .four_img {
+        width: 183px;
+        height: 134px;
+    }
 
-.fi_img {
-    width: 163px;
-}
+    .fi_img {
+        width: 163px;
+    }
 
-.s_img {
-    width: 163px;
-}
+    .s_img {
+        width: 163px;
+    }
 
-.first_grid .link_for_box::after,
-.second_grid .link_for_box::after,
-.third_grid a::after,
-.f_grid a::after,
-.fi_grid a::after,
-.s_grid a::after  {
-    width: 224px;
-    height: 372px;
-}
+    .first_grid, .second_grid {
+        height: 360px;
+    }
 
-.third_grid a::after,
-.f_grid a::after,
-.fi_grid a::after,
-.s_grid a::after {
-    height: 190px;
-}
+    .sets_area_link {
+        width: 279.99px;
+        height: 360px;
+    }
 
-.first_grid .link_for_box:hover::after,
-.second_grid .link_for_box:hover::after,
-.third_grid a:hover::after,
-.f_grid a:hover::after,
-.fi_grid a:hover::after,
-.s_grid a:hover::after {
-    background-size: 220px;
-}
+    .prop_under_grid:not(.position_for_sets, .position_for_stock) {
+        width: 224px;
+        height: 360px;
+    }
+
+    .position_under_grid2:not(.position_for_sets, .position_for_stock) {
+        width: 224px;
+        height: 190px;
+    }
 }
 
 @media all and (max-width:620px) {
     .map {
-        width:450px;
-        height:393px;
+        width: 450px;
+        height: 393px;
     }
 }
 
@@ -607,7 +719,7 @@ left: 57%;
 
     .protein_man {
         width: 300px;
-        height: 300px;;
+        height: 300px;
     }
 
     .arrow {
